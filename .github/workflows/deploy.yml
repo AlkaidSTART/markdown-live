@@ -32,6 +32,7 @@ jobs:
       - name: Deploy to pages branch
         run: |
           cd dist
+          touch .nojekyll
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
